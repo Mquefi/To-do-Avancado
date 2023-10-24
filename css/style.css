@@ -1,0 +1,68 @@
+/* Geral - retirando todas as margens e espaços */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/"); /* caminho da pasta onde está salvo o background */
+    background-position: center; /* backgrou centraliza na tela */
+    background-size: cover; /* background se adapta a tela do usuário */
+}
+
+button{
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid #2c0ed6;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: #2c0ed6;
+    color: aliceblue;
+}
+
+button:hover > i {
+    color: aliceblue;
+}
+
+button i {
+    color: #2c0ed6;
+    font-weight: bold;
+    pointer-events: none; /* Desabilita o evento no ícone pro usuário conseguir apertar o botão abaixo */
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+/*
+.hide {
+    display: none;
+}
+*/
+
+/* HEADER */
+.janela-todo {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: black;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.janela-todo header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
