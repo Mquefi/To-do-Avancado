@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url("../img/"); /* caminho da pasta onde está salvo o background */
+    background-image: url("../img/forest-landscape-clouds-4k-xn.jpg"); /* caminho da pasta onde está salvo o background */
     background-position: center; /* backgrou centraliza na tela */
     background-size: cover; /* background se adapta a tela do usuário */
 }
@@ -55,7 +55,7 @@ input, select {
 .janela-todo {
     max-width: 450px;
     margin: 3rem auto;
-    background-color: black;
+    background-color: #FDFDFD;
     padding: 1.5rem;
     border-radius: 15px;
 }
@@ -65,4 +65,91 @@ input, select {
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1rem;
+}
+
+#insert-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.5rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+}
+
+/* FILTRO E PESQUISA */
+#toolbar {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#filter select {
+    flex: 1rem /* AJUSTAR A LARGURA DISPONÍVEL */
+}
+
+/* TODO LIST */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through; /* Risca a linha */
+    font-style: italic;
 }
